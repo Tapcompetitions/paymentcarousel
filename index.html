@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Carousel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: transparent; /* Transparent background */
+            color: #333;
+        }
+
+        /* Payment Carousel Styling */
+        .checkout-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background: transparent; /* Transparent background for the container */
+            padding: 10px 0;
+        }
+
+        .payment-text {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .payment-carousel {
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: transparent; /* Transparent background for carousel */
+        }
+
+        .carousel-track-payment {
+            display: flex;
+            gap: 20px;
+            animation: slide-payment 30s linear infinite;
+        }
+
+        @keyframes slide-payment {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .payment-logo {
+            height: 40px;
+            width: auto;
+            margin: 5px;
+            border-radius: 8px;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!-- Payment Carousel Section -->
+    <div class="checkout-container">
+        <p class="payment-text">— All major payment methods accepted —</p>
+        <div class="payment-carousel">
+            <div class="carousel-track-payment">
+                <!-- Original Set of Logos -->
+                <img src="https://cdn.shopify.com/shopifycloud/admin-ui-foundations/payment-icons/2c2bf.svg" alt="Visa" class="payment-logo">
+                <img src="https://cdn.shopify.com/shopifycloud/admin-ui-foundations/payment-icons/cd169.svg" alt="Mastercard" class="payment-logo">
+                <img src="https://cdn.shopify.com/shopifycloud/admin-ui-foundations/payment-icons/b34cb.svg" alt="American Express" class="payment-logo">
+                <img src="https://cdn.shopify.com/shopifycloud/admin-ui-foundations/payment-icons/1147a.svg" alt="Eftpos" class="payment-logo">
+                <img src="https://cdn.shopify.com/shopifycloud/admin-ui-foundations/payment-icons/b21a3.svg" alt="UnionPay" class="payment-logo">
+                <img src="https://images.clickfunnels.com/cdn-cgi/image/width=600,fit=scale-down,f=auto,q=80/https://statics.myclickfunnels.com/workspace/JgAOOg/image/5634490/file/4c128c320ac7ca07eb99ff0b4b10059d.png" alt="Google Pay" class="payment-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" class="payment-logo">
+                <!-- Duplicate Set of Logos for Seamless Loop -->
+                <img src="https://cdn.shopify.com/shopifycloud/admin-ui-foundations/payment-icons/2c2bf.svg" alt="Visa" class="payment-logo">
+                <img src="https://cdn.shopify.com/shopifycloud/admin-ui-foundations/payment-icons/cd169.svg" alt="Mastercard" class="payment-logo">
+                <img src="https://cdn.shopify.com/shopifycloud/admin-ui-foundations/payment-icons/b34cb.svg" alt="American Express" class="payment-logo">
+                <img src="https://cdn.shopify.com/shopifycloud/admin-ui-foundations/payment-icons/1147a.svg" alt="Eftpos" class="payment-logo">
+                <img src="https://cdn.shopify.com/shopifycloud/admin-ui-foundations/payment-icons/b21a3.svg" alt="UnionPay" class="payment-logo">
+                <img src="https://images.clickfunnels.com/cdn-cgi/image/width=600,fit=scale-down,f=auto,q=80/https://statics.myclickfunnels.com/workspace/JgAOOg/image/5634490/file/4c128c320ac7ca07eb99ff0b4b10059d.png" alt="Google Pay" class="payment-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" class="payment-logo">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
